@@ -13,17 +13,21 @@
     <script src="countdown/simplyCountdown.min.js"></script>
     <!-- Boostrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- Animated On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- hero -->
     <section class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
       <main>
         <h4>Kepada Bapak/Ibu/Saudara/i</h4>
-        <h1>Oleksandr Usyk & Yekaterina</h1>
-        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
-        <div class="simply-countdown"></div>
-        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
+        <h1 data-aos="zoom-in-down" data-aos-duration="1000">Oleksandr Usyk & Yekaterina</h1>
+        <p data-aos="zoom-in-up" data-aos-duration="1000">Akan melangsungkan resepsi pernikahan dalam:</p>
+        <div class="simply-countdown" data-aos="zoom-in" data-aos-duration="2000"></div>
+        <a href="#home" class="btn btn-lg mt-4" data-aos="fade-up" data-aos-duration="1000" onclick="enableScroll()">Lihat Undangan</a>
       </main>
     </section>
     <!-- offcanvas -->
@@ -40,7 +44,7 @@
           </div>
           <div class="offcanvas-body">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link active" href="#home">Home</a>
               <a class="nav-link" href="#info">Info</a>
               <a class="nav-link" href="#story">Story</a>
               <a class="nav-link" href="#gallery">Gallery</a>
@@ -56,8 +60,11 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
-            <h2>Acara Pernikahan</h2>
-            <h3>Diselenggarakan pada 05 Januari 2026<br />Bandung, Jawa Barat.</h3>
+            <h2 data-aos="zoom-in" data-aos-duration="1000">Acara Pernikahan</h2>
+            <h3>
+              Diselenggarakan di Kediaman Mempelai Wanita<br />
+              Tanggal 05 Januari 2026<br />Bandung, Jawa Barat.
+            </h3>
             <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu/Saudara/i, untuk hadir pada acara pernikahan kami.</p>
           </div>
         </div>
@@ -76,14 +83,14 @@
                 </p>
               </div>
               <div class="col-4">
-                <img src="https://picsum.photos/id/338/400" alt="Oleksandr Usyk" class="img-responsive rounded-circle" />
+                <img src="https://picsum.photos/id/338/400" alt="Oleksandr Usyk" class="img-responsive rounded-circle" data-aos="flip-left" data-aos-duration="1000" />
               </div>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="row">
               <div class="col-4">
-                <img src="https://picsum.photos/id/64/400" alt="Yekaterina" class="img-responsive rounded-circle" />
+                <img src="https://picsum.photos/id/64/400" alt="Yekaterina" class="img-responsive rounded-circle" data-aos="flip-right" data-aos-duration="1000" />
               </div>
               <div class="col-8">
                 <h3>Yekaterina</h3>
@@ -106,7 +113,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Informasi Acara</h2>
+            <h2 data-aos="zoom-in" data-aos-duration="1000">Informasi Acara</h2>
             <p class="alamat">Alamat: Gedung Kologdam, Kodiklat TNI AD.<br />Jl. Aceh, Merdeka, Kec. Sumur Bandung, Kota Bandung</p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.839933235277!2d107.61686399999999!3d-6.909734899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e635c9284fc1%3A0x268bddf9bd0971c0!2sKologdam!5e0!3m2!1sen!2sid!4v1735808296298!5m2!1sen!2sid"
@@ -116,8 +123,17 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              data-aos="zoom-out"
+              data-aos-duration="800"
+              data-aos-delay="300"
             ></iframe>
-            <a href="https://maps.app.goo.gl/tZekRi8snyC1mWyM8" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta.</a>
+            <a href="https://maps.app.goo.gl/tZekRi8snyC1mWyM8" target="_blank" class="btn btn-light btn-sm my-3">Buka Peta Lokasi</a>
+            <a
+              href="https://www.google.com/calendar/render?action=TEMPLATE&text=Akad+Nikah&dates=20260105T080000Z/20260105T100000Z&details=Senin,+05+Januari+2026,+Pukul+08.00+-+10.00,+Kediaman+Mempelai+Wanita,+Gedung+Kologdam+Jl.+Aceh+Merdeka+Kota+Bandung,+Jawa+Barat,+https://maps.app.goo.gl/tZekRi8snyC1mWyM8"
+              target="_blank"
+              class="btn btn-light btn-sm my-3"
+              >Tambah ke Kalender</a
+            >
             <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba ditujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.</p>
           </div>
         </div>
@@ -167,13 +183,13 @@
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
             <span>Bagaimana Cinta Kami Bersemi</span>
-            <h2>Cerita Kami</h2>
+            <h2 data-aos="zoom-in" data-aos-duration="1000">Cerita Kami</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit cumque nobis ea maxime assumenda, consequatur ut dicta maiores qui eaque soluta laborum fuga ad nemo nihil provident aliquam molestias</p>
           </div>
         </div>
         <div class="row">
           <ul class="timeline">
-            <li>
+            <li data-aos="flip-up" data-aos-duration="1000">
               <div class="timeline-image" style="background-image: url(https://picsum.photos/250)"></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -185,7 +201,7 @@
                 </div>
               </div>
             </li>
-            <li class="timeline-inverted">
+            <li class="timeline-inverted" data-aos="flip-down" data-aos-duration="1000">
               <div class="timeline-image" style="background-image: url(https://picsum.photos/200/300)"></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -197,7 +213,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li data-aos="flip-up" data-aos-duration="1000">
               <div class="timeline-image" style="background-image: url(https://picsum.photos/200)"></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -209,7 +225,7 @@
                 </div>
               </div>
             </li>
-            <li class="timeline-inverted">
+            <li class="timeline-inverted" data-aos="flip-down" data-aos-duration="1000">
               <div class="timeline-image" style="background-image: url(https://picsum.photos/300)"></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -231,11 +247,11 @@
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
             <span>Memory Kisah Kami</span>
-            <h2>Gallery Foto</h2>
+            <h2 data-aos="zoom-in" data-aos-duration="1000">Gallery Foto</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tenetur aut ullam numquam.</p>
           </div>
         </div>
-        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center" data-aos="fade-up" data-aos-duration="3000">
           <div class="col mt-3">
             <a href="https://picsum.photos/id/64/1200/768" data-toggle="lightbox" data-caption="picsum.photos/id/64" data-gallery="mygallery">
               <img src="https://picsum.photos/id/64/400/533" alt="Lorem" class="img-fluid w-100 rounded" />
@@ -284,15 +300,21 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Konfirmasi Kehadiran</h2>
+            <h2 data-aos="zoom-in" data-aos-duration="1000">Konfirmasi Kehadiran</h2>
             <p>Isi form dibawah ini untuk konfirmasi kehadiran</p>
           </div>
         </div>
-        <form method="POST" action="" class="row row-cols-md-auto g-3 align-items-center justify-content-center">
+        <form method="POST" action="" class="row row-cols-md-auto g-3 align-items-center justify-content-center" id="myForm">
           <div class="col-12">
             <div class="mb-3">
               <label for="nama" class="form-label">Nama</label>
               <input type="text" class="form-control" id="nama" name="nama" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="tanggal" class="form-label">Jam</label>
+              <input type="time" class="form-control" id="tanggal" name="tanggal" />
             </div>
           </div>
           <div class="col-12">
@@ -305,7 +327,7 @@
             <div class="mb-3">
               <label for="status" class="form-label">Konfirmasi</label>
               <select name="status" id="status" class="form-select">
-                <option selected>Pilih salah satu</option>
+                <option value="">Pilih salah satu</option>
                 <option value="Hadir">Hadir</option>
                 <option value="Tidak Hadir">Tidak Hadir</option>
               </select>
@@ -315,6 +337,7 @@
             <button class="btn btn-primary">Kirim</button>
           </div>
         </form>
+        <div id="terundang"></div>
       </div>
     </section>
     <!-- gifts -->
@@ -323,7 +346,7 @@
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
             <span>ungkapan tanda kasih</span>
-            <h2>Kirim Hadiah</h2>
+            <h2 data-aos="zoom-in" data-aos-duration="1000">Kirim Hadiah</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatem eveniet nobis, repellendus impedit labore</p>
           </div>
         </div>
@@ -371,6 +394,102 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/notify.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      const webAppUrl = 'https://sheetdb.io/api/v1/is9teft0t2piu';
+      function fetchSheetData() {
+        fetch(webAppUrl)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then((data) => {
+            if (data.length > 0) {
+              let html = '';
+              let no = 1;
+              let total = 0;
+              html += '<div class="table-responsive rounded" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><table class="table caption-top">';
+              html += '<caption class="text-center">Daftar undangan yang akan hadir :</caption>';
+              html += '<thead>';
+              html += '<tr><th scope="col">#</th><th scope="col">Nama</th><th scope="col">Tanggal Jam</th><th scope="col">Jumlah</th><th scope="col">Status</th></tr>';
+              html += '</thead>';
+              html += '<tbody>';
+              $.each(data, function (index, obj) {
+                html += '<tr>';
+                html += '<td>' + no + '</td>';
+                html += '<td>' + obj.nama + '</td>';
+                html += '<td>' + obj.tanggal + '</td>';
+                html += '<td>' + obj.jumlah + '</td>';
+                html += '<td>' + obj.status + '</td>';
+                html += '</tr>';
+                if (obj.status == 'Hadir') {
+                  total += Number(obj.jumlah);
+                }
+                no++;
+              });
+              html += '<tr>';
+              html += '<th colspan = "3" class="text-center">Total undangan yang hadir</th>';
+              html += '<th>' + total + '</th>';
+              html += '<th></th>';
+              html += '</tr>';
+              html += '</tbody></table></div>';
+              document.querySelector('#terundang').innerHTML = html;
+            }
+          })
+          .catch((error) => {
+            // console.log('Terjadi Kesalahan saat memuat data', error);
+            $.notify(`Terjadi Kesalahan saat memuat data ${error}`, 'error');
+          });
+      }
+      fetchSheetData();
+
+      document.querySelector('form').onsubmit = function (e) {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData);
+        // const tgl = new Date();
+        // const format_tgl = ('0' + tgl.getDate()).slice(-2) + '/' + ('0' + (tgl.getMonth() + 1)).slice(-2) + '/' + tgl.getFullYear();
+        const tgl_akad = '05/01/2026';
+        let jam = data.tanggal ? data.tanggal : '08:00';
+        const split_jam = jam.split(':');
+        data.tanggal = tgl_akad + ' ' + '0' + split_jam[0].slice(-2) + ':' + '0' + split_jam[1].slice(-2);
+        if (data.nama && data.status) {
+          $(this).find(':button').prop('disabled', true);
+          fetch(webAppUrl, {
+            method: 'POST',
+            body: JSON.stringify({ data }),
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          })
+            .then((response) => {
+              if (!response.ok) {
+                // alert('Terjadi kesalahan saat mengirim pesan');
+                $.notify('Terjadi kesalahan saat mengirim pesan', 'error');
+              }
+              return response.text();
+            })
+            .then((result) => {
+              // alert('Pesan berhasil dikirim!');
+              $.notify('Pesan berhasil dikirim!', 'success');
+              $(this).find(':button').prop('disabled', false);
+              document.getElementById('myForm').reset();
+              fetchSheetData(); // Refresh data setelah mengirim
+            })
+            .catch((error) => {
+              // console.error('Terjadi kesalahan saat memuat data', error);
+              $.notify(`Terjadi Kesalahan saat memuat data ${error}`, 'error');
+            });
+        } else {
+          $.notify('Form Kehadiran tidak boleh kosong', 'error');
+        }
+      };
+    </script>
     <script>
       simplyCountdown('.simply-countdown', {
         year: 2026, // Target year (required)
@@ -443,6 +562,20 @@
         isPlaying = !isPlaying;
       };
       disableScroll();
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // let navbarWrap = document.getElementsByClassName('navbar-nav');
+        let btns = document.getElementsByClassName('nav-link');
+        for (let i = 0; i < btns.length; i++) {
+          btns[i].addEventListener('click', function () {
+            let current = document.getElementsByClassName('active');
+            current[0].className = current[0].className.replace(' active', '');
+            this.className += ' active';
+          });
+        }
+      });
     </script>
   </body>
 </html>

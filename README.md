@@ -13,3 +13,10 @@ Undangan Online - Project Final Part 2
 -Website juga menampilkan kisah perjalanan kedua mempelai dari pertama ketemu sampai menikah.  
 -Fitur RSVP atau Konfirmasi Kehadiran ditambahkan agar tuan rumah dapat memastikan berapa banyak tamu undangan yang hadir.  
 -Terundang juga dapat mengirimkan hadiah, bisa saja nanti ditambahkan akun e-wallet.
+
+Undangan Online - Project Final Part 3  
+-Membuat interaksi navbar. Jika Navbar diklik atau aktive, Navbar efek bold.  
+-Animated On Scroll untuk menambahkan animasi saat elemen muncul di viewport selama pengguna menggulir halaman.  
+-Memperbaharui fitur Countdown.  
+-Eksternal link ke Google Map dan Google Calendar.  
+-Submit Form menggunakan Google Sheets + SheetDB.

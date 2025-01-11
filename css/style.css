@@ -66,12 +66,14 @@ body {
   height: 100vh;
 }
 .mynavbar .nav-link {
-  /* font-weight: 600; */
   text-transform: uppercase;
+}
+.mynavbar .nav-link.active {
+  font-weight: bold;
 }
 /* Home */
 .home {
-  background-image: url(img/bg.png);
+  background-image: url(../img/bg.png);
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
@@ -279,6 +281,12 @@ body {
   background-color: white;
   color: var(--pink);
   border: 1px solid white;
+}
+table caption {
+  background-color: white;
+  border: 1px solid #ddd;
+  color: black;
+  margin-top: 3rem;
 }
 /* Footer */
 footer {
